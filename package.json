@@ -2,6 +2,7 @@
   "name": "access-package",
   "displayName": "Access Package",
   "description": "Create Access Packages Template",
+  "publisher": "sanketjoshi",
   "version": "0.0.1",
   "repository": {
     "type": "git",

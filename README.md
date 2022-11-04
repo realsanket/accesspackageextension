@@ -1,7 +1,6 @@
-# access-package README
+# access-package
 
-Create Access Packages Template type accesspackage in any .json file
-
+Create Access Packages Template 
 
 ### 1.0.0
 
