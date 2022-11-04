@@ -1,0 +1,24 @@
+{
+    "AccessPackages": {
+        "prefix": "accesspackage",
+        "body": [
+        "{ \n    \"Name\":\"${1:Access Package Name}\", ",
+        "    \"Description\":\"${2:Access Package Description}\", ",
+        "    \"CatalogName\":\"${3:Catalog Name}\", ",
+        "    \"TeamMemberPolicy\":[ \n        \"Groups\": [ \n             \"${4:Group Name}\" \n          ]",
+        "        \"Users\": [ \n             \"${5:User Name}\" \n          ]",
+        "        \"ReviewersGroup\": [ \n             \"${6:Reviewers Group}\" \n          ]",
+        "        \"ReviewersUsers\": [ \n             \"${7:Reviewers Users}\" \n          ]",
+        "    ] \n     ",
+        "    \"NonTeamMemberPolicy\":[ \n        \"Groups\": [ \n             \"${8:Group Name}\" \n          ]",
+        "        \"Users\": [ \n             \"${9:User Name}\" \n          ]",
+        "        \"ReviewersGroup\": [ \n             \"${10:Reviewers Group}\" \n          ]",
+        "        \"ReviewersUsers\": [ \n             \"${11:Reviewers Users}\" \n          ]",
+        "    ] \n     ",
+        "}"
+
+        ],
+        "description": "Create Access Packages Template"
+    }
+}
+

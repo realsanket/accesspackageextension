@@ -1,0 +1,25 @@
+{
+  "name": "access-package",
+  "displayName": "Access Package",
+  "description": "Create Access Packages Template",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url":"https://github.com/realsanket/accesspackageextension"
+  },
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "json",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
