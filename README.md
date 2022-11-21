@@ -9,10 +9,9 @@ This will generate the output like
 
 
 ```
-
 { 
     "Name":"Access Package Name", 
-    "Description":"Access Package Description", 
+    "SubscriptionID":"Subscription ID", 
     "CatalogName":"Catalog Name", 
     "TeamMemberPolicy":{ 
         "Groups": [ 
@@ -30,10 +29,10 @@ This will generate the output like
     },
      
     "NonTeamMemberPolicy":{ 
-        "Groups": [ 
+        "ApproversGroups": [ 
              "Group Name" 
           ],
-        "Users": [ 
+        "ApproversUsers": [ 
              "User Name" 
           ],
         "ReviewersGroup": [ 
@@ -42,8 +41,15 @@ This will generate the output like
         "ReviewersUsers": [ 
              "Reviewers Users" 
           ]
-    } 
-     
+    },  
+    "Resources":[ 
+       { 
+         "Group": "Group Name", 
+         "Role": "Group Name" 
+      }    
+  ],
+    "ReplaceAccessPackage":"True",  
+    "IsHidden":"True" 
 }
 ```
 ### 1.0.2

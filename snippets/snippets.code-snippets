@@ -1,23 +1,31 @@
 {
-	"AccessPackages": {
-		"prefix": "accesspackage",
-		"body": [
-		"{ \n    \"Name\":\"${1:Access Package Name}\", ",
-		"    \"Description\":\"${2:Access Package Description}\", ",
-		"    \"CatalogName\":\"${3:Catalog Name}\", ",
-		"    \"TeamMemberPolicy\":{ \n        \"Groups\": [ \n             \"${4:Group Name}\" \n          ],",
-		"        \"Users\": [ \n             \"${5:User Name}\" \n          ],",
-		"        \"ReviewersGroup\": [ \n             \"${6:Reviewers Group}\" \n          ],",
-		"        \"ReviewersUsers\": [ \n             \"${7:Reviewers Users}\" \n          ]",
-		"    },\n     ",
-		"    \"NonTeamMemberPolicy\":{ \n        \"Groups\": [ \n             \"${8:Group Name}\" \n          ],",
-		"        \"Users\": [ \n             \"${9:User Name}\" \n          ],",
-		"        \"ReviewersGroup\": [ \n             \"${10:Reviewers Group}\" \n          ],",
-		"        \"ReviewersUsers\": [ \n             \"${11:Reviewers Users}\" \n          ]",
-		"    } \n     ",
-		"}"
-
-		],
-		"description": "Create Access Packages Template"
-	}
-}
+		"AccessPackages": {
+			"prefix": "accesspackage",
+			"body": [
+			"{ \n    \"Name\":\"${1:Access Package Name}\", ",
+			"    \"SubscriptionID\":\"${2:Subscription ID}\", ",
+			"    \"CatalogName\":\"${3:Catalog Name}\", ",
+			"    \"TeamMemberPolicy\":{ \n        \"Groups\": [ \n             \"${4:Group Name}\" \n          ],",
+			"        \"Users\": [ \n             \"${5:User Name}\" \n          ],",
+			"        \"ReviewersGroup\": [ \n             \"${6:Reviewers Group}\" \n          ],",
+			"        \"ReviewersUsers\": [ \n             \"${7:Reviewers Users}\" \n          ]",
+			"    },\n     ",
+			"    \"NonTeamMemberPolicy\":{ \n        \"ApproversGroups\": [ \n             \"${8:Group Name}\" \n          ],",
+			"        \"ApproversUsers\": [ \n             \"${9:User Name}\" \n          ],",
+			"        \"ReviewersGroup\": [ \n             \"${10:Reviewers Group}\" \n          ],",
+			"        \"ReviewersUsers\": [ \n             \"${11:Reviewers Users}\" \n          ]",
+			"    },  ",
+			"    \"Resources\":[ \n       { \n         \"Group\": \"${12:Group Name}\", \n         \"Role\": \"${13:Group Name}\" \n      }    \n  ],",
+	
+			"    \"ReplaceAccessPackage\":\"${14|True,False|}\",  ",
+			"    \"IsHidden\":\"${15|True,False|}\" ",
+	
+	
+		
+			"}"
+	
+			],
+			"description": "Create Access Packages Template"
+		}
+	
+	 }
